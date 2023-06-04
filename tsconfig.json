@@ -6,14 +6,6 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "baseUrl": ".",
-    "paths": {
-      "@core/*": ["src/core/*"],
-      "@styles/*": ["src/styles/*"],
-      "@components/*": ["src/components/*"],
-      "@images/*": ["public/images/*"],
-      "@permission/*": ["src/core/permissions/*"],
-      "@utils/*": ["src/utils/*"]
-    },
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -30,5 +22,6 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src", "**/*.ts", "**/**/*.ts", "**/**/**/*.ts", "**/*.tsx"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "files": ["src/styles/styled.d.ts"]
 }
