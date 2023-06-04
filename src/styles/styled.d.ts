@@ -9,5 +9,8 @@ declare module 'styled-components' {
     gray600: string,
     gray900: string,
     black: string,
+    button: string,
+    hover: string,
+    textButton: string
   }
 }

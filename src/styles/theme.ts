@@ -8,7 +8,10 @@ const Theme = {
     gray100: '#121721',
     gray600: '#9DAEC2',
     gray900: '#6E8098',
-    black: '#ffffff'
+    black: '#ffffff',
+    button: '#303642',
+    hover: '#696E76',
+    textButton: '#FFFFFF'
 
   },
   light: {
@@ -18,7 +21,10 @@ const Theme = {
     gray100: '#F4F6F8',
     gray600: '#9DAEC2',
     gray900: '#6E8098',
-    black: '#19202D'
+    black: '#19202D',
+    button: '#EFF0FC',
+    hover: '#C5C9F4',
+    textButton: '#5964E0'
   }
 }
 

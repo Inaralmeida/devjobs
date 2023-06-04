@@ -11,9 +11,8 @@ export const GlobalStyle = createGlobalStyle`
     cursor: pointer;
   }
 
-  a, li{
+  a{
     list-style: none;
-    text-decoration: none;
   }
 
   input, button{
@@ -24,6 +23,10 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     min-height: 100vh;
     background-color: ${p => p.theme.white};
+  }
+
+  li{
+    text-decoration-color: ${p => p.theme.violet500};
   }
   
 `
