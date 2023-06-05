@@ -11,7 +11,7 @@ export const StyleText = styled.p`
   &.subtitle {
     font-size: 24px;
     line-height: 29px;
-    color: ${(p) => p.theme.gray600};
+    color: ${(p) => p.theme.black};
     font-weight: 600;
   }
 
@@ -26,6 +26,7 @@ export const StyleText = styled.p`
   &.link {
     font-size: 14px;
     line-height: 18px;
-    color: ${(p) => p.theme.gray600};
+    font-weight: 700;
+    color: ${(p) => p.theme.violet500};
   }
 `
