@@ -28,10 +28,10 @@ const CardJob = ({
 }: CardJobProps) => {
   const { gray600 } = useTheme()
 
-  // const navigate = useNavigate()
+  const navigate = useNavigate()
 
   const handleClickCard = () => {
-    // navigate(`/jobs/${id}`)
+    navigate(`/jobs/${id}`)
   }
   return (
     <StylesCardJob onClick={handleClickCard}>
