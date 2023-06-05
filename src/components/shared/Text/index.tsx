@@ -1,4 +1,3 @@
-import React from 'react'
 import { StyleText } from './text.styles'
 
 type TextProps = {
