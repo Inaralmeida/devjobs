@@ -1,5 +1,11 @@
+import ChangeTheme from './components/ChangeTheme'
+
 function App() {
-  return <>app</>
+  return (
+    <>
+      <ChangeTheme />
+    </>
+  )
 }
 
 export default App
