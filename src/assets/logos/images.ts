@@ -10,6 +10,8 @@ import pomodoro from './pomodoro.svg'
 import scoot from './scoot.svg'
 import typemaster from './typemaster.svg'
 import vector from './vector.svg'
+import header from './header.svg'
+import logo from './logo.svg'
 
 export default {
   blogr,
@@ -23,5 +25,7 @@ export default {
   pomodoro,
   scoot,
   typemaster,
-  vector
+  vector,
+  header,
+  logo
 }

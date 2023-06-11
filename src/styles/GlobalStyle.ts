@@ -28,5 +28,10 @@ export const GlobalStyle = createGlobalStyle`
   li{
     text-decoration-color: ${p => p.theme.violet500};
   }
+
+  .content{
+    width: 100%;
+    max-width: 1440px;
+  }
   
 `
