@@ -22,16 +22,17 @@ export const GlobalStyle = createGlobalStyle`
   body{
     width: 100%;
     min-height: 100vh;
-    background-color: ${p => p.theme.white};
+    background-color: ${(p) => p.theme.white};
   }
 
   li{
-    text-decoration-color: ${p => p.theme.violet500};
+    text-decoration-color: ${(p) => p.theme.violet500};
   }
 
   .content{
     width: 100%;
     max-width: 1440px;
+    margin: 0px 100px;
   }
   
 `
