@@ -2,11 +2,12 @@ import { Moon, Sun } from '@phosphor-icons/react'
 import { StylesChangeTheme, Switch } from './ChangeTheme.styles'
 import { useState } from 'react'
 
-const ChangeTheme = () => {
+const ChangeTheme = (props: { setTheme: () => void }) => {
   const [theme, setTheme] = useState<'dark' | 'light'>('dark')
 
   const handleSetTheme = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark')
+    props.setTheme()
   }
 
   return (
