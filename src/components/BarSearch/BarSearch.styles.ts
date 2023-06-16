@@ -9,6 +9,7 @@ export const StylesBarSearch = styled.div`
   padding: 2px;
   border-radius: 8px;
   top: -45px;
+
   > section {
     flex-grow: 1;
   }
