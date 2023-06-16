@@ -35,4 +35,12 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0px 100px;
   }
   
+  .container{
+    width: 100%;
+    min-height: calc(100vh - 162px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
 `
