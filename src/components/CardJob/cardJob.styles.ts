@@ -4,7 +4,8 @@ export const StylesCardJob = styled.div`
   width: 350px;
   display: flex;
   align-items: flex-start;
-  gap: 30px;
+  justify-content: flex-start;
+  gap: 15px;
   background-color: ${(p) => p.theme.gray100};
   flex-direction: column;
   padding: 32px;
@@ -13,16 +14,16 @@ export const StylesCardJob = styled.div`
   transition: all 0.6s;
 
   > picture {
-    display: block;
-    position: absolute;
-    top: -25px;
+    position: relative;
+    top: -55px;
   }
 
   > div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 10px;
+    position: relative;
+    top: -55px;
 
     > article {
       display: flex;

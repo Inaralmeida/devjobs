@@ -5,9 +5,9 @@ import Avatar from '../Avatar'
 import Text from '../shared/Text'
 import { StylesCardJob } from './cardJob.styles'
 
-type CardJobProps = {
+export type CardJobProps = {
   id: number
-  logo: string
+  logo: any
   logoBackground: string
   position: string
   contract: string
