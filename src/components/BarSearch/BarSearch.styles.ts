@@ -21,6 +21,7 @@ export const StylesBarSearch = styled.div`
   }
 
   .section__checkbox {
+    flex-grow: 3;
     width: 50px;
     display: flex;
     gap: 8px;
