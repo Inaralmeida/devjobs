@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import { Check } from '@phosphor-icons/react'
 import { StyleCheckBox, StyleOptionCheckBox } from './checkbox.styles'
 
@@ -10,9 +11,14 @@ type CheckboxProps = {
 }
 
 const CheckBox = ({ options, setValue }: CheckboxProps) => {
+  const [listOptions, setListOptions] = useState(options)
+  useEffect(() => {
+    setListOptions(options)
+  }, [options])
   return (
     <StyleCheckBox>
-      {options.map((option, i) => {
+      {listOptions.map((option, i) => {
+        console.log(option)
         return (
           <StyleOptionCheckBox key={i} onClick={() => setValue(option.label)}>
             <span className={option.checked ? 'active' : ''}>
@@ -27,23 +33,3 @@ const CheckBox = ({ options, setValue }: CheckboxProps) => {
 }
 
 export default CheckBox
-
-/*
-const [options, setOptions] = useState([
-    { label: 'remoto', checked: false },
-    { label: 'presencial', checked: false }
-  ])
-
-  const handleSetOption = (key: string) => {
-    const newList = options.map((option) => {
-      if (option.label === key) {
-        return { ...option, checked: !option.checked }
-      } else {
-        return option
-      }
-    })
-
-    setOptions(newList)
-  }
-
-*/
