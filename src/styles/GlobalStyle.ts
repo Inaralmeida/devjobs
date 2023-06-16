@@ -31,7 +31,7 @@ export const GlobalStyle = createGlobalStyle`
 
   .content{
     width: 100%;
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0px 100px;
   }
   
@@ -42,5 +42,6 @@ export const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    padding-bottom: 50px;
   }
 `
