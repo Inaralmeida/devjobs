@@ -37,7 +37,7 @@ export const images: any = {
   crowdfund,
   maker,
   mastercraft,
-  officelite,
+  'office lite': officelite,
   pod,
   pomodoro,
   scoot,
