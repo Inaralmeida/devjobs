@@ -1,4 +1,4 @@
-import images from '../../assets/logos/images'
+import { images } from '../../assets/logos/images'
 import ChangeTheme from '../ChangeTheme'
 import { StylesHeader } from './header.styles'
 

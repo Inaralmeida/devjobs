@@ -13,7 +13,24 @@ import vector from './vector.svg'
 import header from './header.svg'
 import logo from './logo.svg'
 
-export default {
+type ImagesProps = {
+  blogr: string
+  coffeeroasters: string
+  creative: string
+  crowdfund: string
+  maker: string
+  mastercraft: string
+  officelite: string
+  pod: string
+  pomodoro: string
+  scoot: string
+  typemaster: string
+  vector: string
+  header: string
+  logo: string
+}
+
+export const images: any = {
   blogr,
   coffeeroasters,
   creative,

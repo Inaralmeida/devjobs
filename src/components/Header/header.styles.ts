@@ -1,4 +1,4 @@
-import images from '../../assets/logos/images'
+import { images } from '../../assets/logos/images'
 import styled from 'styled-components'
 
 export const StylesHeader = styled.header`
