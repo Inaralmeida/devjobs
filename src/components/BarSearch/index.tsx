@@ -13,7 +13,6 @@ const BarSearch = () => {
   ])
 
   const handleSetTypeContract = (label: string) => {
-    console.log(label)
     const newList = optionsContratc.map((option) => {
       if (option.label === label) {
         return {
@@ -24,7 +23,6 @@ const BarSearch = () => {
         return option
       }
     })
-    console.log(newList)
     setOptionsContratc(newList)
   }
   return (

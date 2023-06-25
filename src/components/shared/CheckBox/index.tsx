@@ -18,7 +18,6 @@ const CheckBox = ({ options, setValue }: CheckboxProps) => {
   return (
     <StyleCheckBox>
       {listOptions.map((option, i) => {
-        console.log(option)
         return (
           <StyleOptionCheckBox key={i} onClick={() => setValue(option.label)}>
             <span className={option.checked ? 'active' : ''}>
