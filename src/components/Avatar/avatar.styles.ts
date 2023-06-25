@@ -14,15 +14,26 @@ export const StylesAvatar = styled.div<StylesAvatarProps>`
     width: 50px;
     height: 50px;
     border-radius: 15px;
+
+    > img {
+    width: 80%;
+  }
   }
 
   &.large {
     width: 140px;
     height: 140px;
     border-radius: 0 0 0 6px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > img {
+    transform: scale(2.8);
+      
+    }
+
   }
 
-  > img {
-    width: 80%;
-  }
+  
 `
