@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { get } from '../../API/api'
 import HeaderJob from '../../components/HeaderJob'
 import { images } from '../../assets/logos/images'
+import BodyDescriptionJob from '../../components/BodyDescriptionJob'
 
 type JobProps = {
   id: number
@@ -47,6 +48,7 @@ const Jobs = () => {
         website={job?.website}
         colorbg={job?.logoBackground}
       />
+      <BodyDescriptionJob />
     </div>
   )
 }
