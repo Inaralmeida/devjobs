@@ -16,5 +16,7 @@ export const StylesHeader = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: transparent;
+
   }
 `

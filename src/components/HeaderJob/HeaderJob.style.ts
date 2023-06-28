@@ -7,6 +7,7 @@ export const StyleHeaderJob = styled.div`
   justify-content: space-between;
   border-radius: 0 8px 8px 8px;
   position: relative;
+  padding: 0;
   top: -45px;
   background-color: ${({ theme }) => theme.gray100};
 

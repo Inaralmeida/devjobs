@@ -6,4 +6,5 @@ export const StyleListJobs = styled.ul`
   padding: 0;
   justify-content: space-between;
   margin-top: 50px;
+  background-color: transparent;
 `
