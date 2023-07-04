@@ -32,7 +32,7 @@ export const GlobalStyle = createGlobalStyle`
   .content{
     width: 90%;
     max-width: 1200px;
-    margin: 0px 100px;
+    /* margin: 0px 100px; */
   }
   
   .container{
