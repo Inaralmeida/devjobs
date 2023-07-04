@@ -38,10 +38,3 @@ const DescriptionWithList = ({
 
 export default DescriptionWithList
 
-const Lists = (children: any, typeList: 'ul' | 'ol') => {
-  if (typeList === 'ul') {
-    return <ul>{children}</ul>
-  } else if (typeList === 'ol') {
-    return <ol>{children}</ol>
-  }
-}
