@@ -21,7 +21,14 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "**/*.ts", "**/**/*.ts", "**/**/**/*.ts", "**/*.tsx"],
+  "include": [
+    "src",
+    "**/*.ts",
+    "**/**/*.ts",
+    "**/**/**/*.ts",
+    "**/*.tsx",
+    "public/API"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }],
   "files": ["src/styles/styled.d.ts"]
 }

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import ListJobs from '../../components/ListJobs'
-import { get } from '../../API/api'
+import { get } from '../../../public/API/api'
 import BarSearch from '../../components/BarSearch'
 
 const Home = () => {

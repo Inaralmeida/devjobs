@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { get } from '../../API/api'
+import { get } from '../../../public/API/api'
 import HeaderJob from '../../components/HeaderJob'
 import { images } from '../../assets/logos/images'
 import BodyDescriptionJob from '../../components/BodyDescriptionJob'
