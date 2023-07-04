@@ -7,6 +7,7 @@ export const StylesBodyDescriptionJob = styled.div`
   gap: 40px;
   border-radius: 6px;
   padding: 48px;
+  background-color: ${(p) => p.theme.gray100};
 
   color: ${({ theme }) => theme.black};
 

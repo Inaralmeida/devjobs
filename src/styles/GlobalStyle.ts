@@ -33,7 +33,6 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     max-width: 1200px;
     margin: 0px 100px;
-    background-color: ${(p) => p.theme.gray100};
   }
   
   .container{
