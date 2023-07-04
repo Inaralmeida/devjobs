@@ -4,6 +4,7 @@ import { get } from '../../API/api'
 import HeaderJob from '../../components/HeaderJob'
 import { images } from '../../assets/logos/images'
 import BodyDescriptionJob from '../../components/BodyDescriptionJob'
+import FooterJob from '../../components/FooterJob'
 
 export type JobProps = {
   id: number
@@ -41,7 +42,7 @@ const Jobs = () => {
   }, [])
 
   return (
-    <div className="container">
+    <div className="container" style={{ paddingBottom: '0' }}>
       {job && (
         <>
           <HeaderJob
@@ -51,6 +52,7 @@ const Jobs = () => {
             colorbg={job?.logoBackground}
           />
           <BodyDescriptionJob job={job} />
+          <FooterJob company={job.company} position={job.position} />
         </>
       )}
     </div>
