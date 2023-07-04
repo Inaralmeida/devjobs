@@ -18,7 +18,12 @@ const HeaderJob = ({
 }: HeaderJobProps) => {
   return (
     <StyleHeaderJob className="content">
-      <Avatar type="large" background={colorbg} src={image} alt={company} />
+      <span className="large">
+        <Avatar type="large" background={colorbg} src={image} alt={company} />
+      </span>
+      <span className="thumb">
+        <Avatar type="thumb" background={colorbg} src={image} alt={company} />
+      </span>
 
       <div>
         <section>

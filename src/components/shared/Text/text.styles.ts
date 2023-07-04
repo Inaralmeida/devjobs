@@ -29,4 +29,19 @@ export const StyleText = styled.p`
     font-weight: 700;
     color: ${(p) => p.theme.violet500};
   }
+
+  @media screen and (max-width: 768px) {
+    &.title {
+      font-size: 24px;
+    }
+
+    &.subtitle {
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    &.paragraph {
+      font-size: 12px;
+    }
+  }
 `
