@@ -9,11 +9,7 @@ type BarSearchProps = {
   searchJobs: () => void
   valueSearch: string
 }
-const BarSearch = ({
-  handleChange,
-  searchJobs,
-  valueSearch
-}: BarSearchProps) => {
+const BarSearch = ({ handleChange, searchJobs }: BarSearchProps) => {
   const [searchByTitle, setSearchByTitle] = useState('')
   const [searchByLocation, setSearchByLocation] = useState('')
   const [optionsContratc, setOptionsContratc] = useState([
