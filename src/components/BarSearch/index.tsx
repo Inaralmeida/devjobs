@@ -1,10 +1,19 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Button from '../shared/Button'
 import CheckBox from '../shared/CheckBox'
 import Input from '../shared/Input'
 import { StylesBarSearch } from './BarSearch.styles'
 
-const BarSearch = () => {
+type BarSearchProps = {
+  handleChange: (value: string) => void
+  searchJobs: () => void
+  valueSearch: string
+}
+const BarSearch = ({
+  handleChange,
+  searchJobs,
+  valueSearch
+}: BarSearchProps) => {
   const [searchByTitle, setSearchByTitle] = useState('')
   const [searchByLocation, setSearchByLocation] = useState('')
   const [optionsContratc, setOptionsContratc] = useState([
@@ -12,6 +21,9 @@ const BarSearch = () => {
     { label: 'Full Time', checked: false }
   ])
 
+  useEffect(() => {
+    handleChange(searchByTitle)
+  }, [searchByTitle, searchByLocation])
   const handleSetTypeContract = (label: string) => {
     const newList = optionsContratc.map((option) => {
       if (option.label === label) {
@@ -48,7 +60,9 @@ const BarSearch = () => {
 
       <section title="type contract" className="section__checkbox">
         <CheckBox options={optionsContratc} setValue={handleSetTypeContract} />
-        <Button title="button search">Search</Button>
+        <Button title="button search" onClick={searchJobs}>
+          Search
+        </Button>
       </section>
     </StylesBarSearch>
   )
