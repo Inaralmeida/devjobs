@@ -5,7 +5,7 @@ import HeaderJob from '../../components/HeaderJob'
 import { images } from '../../assets/logos/images'
 import BodyDescriptionJob from '../../components/BodyDescriptionJob'
 
-type JobProps = {
+export type JobProps = {
   id: number
   company: string
   logo: string
@@ -42,13 +42,17 @@ const Jobs = () => {
 
   return (
     <div className="container">
-      <HeaderJob
-        company={job?.company}
-        image={images[job ? job?.company.toLowerCase() : 0]}
-        website={job?.website}
-        colorbg={job?.logoBackground}
-      />
-      <BodyDescriptionJob />
+      {job && (
+        <>
+          <HeaderJob
+            company={job?.company}
+            image={images[job ? job?.company.toLowerCase() : 0]}
+            website={job?.website}
+            colorbg={job?.logoBackground}
+          />
+          <BodyDescriptionJob job={job} />
+        </>
+      )}
     </div>
   )
 }

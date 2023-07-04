@@ -8,45 +8,40 @@ import Text from '../shared/Text'
 import { DotOutline } from '@phosphor-icons/react'
 import { useTheme } from 'styled-components'
 import DescriptionWithList from '../DescriptionWithList'
+import { JobProps } from 'src/Pages/Jobs'
 
-const BodyDescriptionJob = () => {
+const BodyDescriptionJob = ({ job }: { job: JobProps }) => {
   const { gray600 } = useTheme()
   return (
     <StylesBodyDescriptionJob className="content">
       <StylesNameJob title="name job" className="nameJob">
         <div>
           <div className="timeAndContract">
-            <Text as="paragraph">time</Text>
+            <Text as="paragraph">{job.postedAt}</Text>
             <DotOutline size={24} weight="fill" color={gray600} />
-            <Text as="paragraph">contract</Text>
+            <Text as="paragraph">{job.contract}</Text>
           </div>
-          <Text as="title">name job</Text>
-          <Text as="link">location</Text>
+          <Text as="title">{job.position}</Text>
+          <Text as="link">{job.location}</Text>
         </div>
         <Button label="Apply Now" variant="primary" />
       </StylesNameJob>
       <section title="description job">
-        <Text as="paragraph">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
-          ullam maxime? Laboriosam sapiente molestiae, voluptate, consequatur
-          facere, dicta et unde nostrum excepturi aspernatur ratione cupiditate
-          neque quam deleniti libero dolores. Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Officia, ullam maxime? Laboriosam
-          sapiente molestiae, voluptate, consequatur facere, dicta et unde
-          nostrum excepturi aspernatur ratione cupiditate neque quam deleniti
-          libero dolores.
-        </Text>
+        <Text as="paragraph">{job.description}</Text>
       </section>
 
       <DescriptionWithList
         title="Requirements"
-        description="neque quam deleniti libero dolores. Lorem ipsum dolor sit, amet
-        consectetur adipisicing elit. Officia, ullam maxime? Laboriosam
-        sapiente molestiae, voluptate, consequatur facere, dicta et unde
-        nostrum excepturi aspernatur ratione cupiditate neque quam deleniti
-        libero dolores."
-        typeList="ol"
-        list={['lorem', 'ipsum', 'lodiput']}
+        description={job.requirements.content}
+        typeList="ul"
+        list={job.requirements.items}
+      />
+
+      <DescriptionWithList
+        title="What You Will Do"
+        description={job.role.content}
+        typeList="ul"
+        list={job.role.items}
       />
     </StylesBodyDescriptionJob>
   )
