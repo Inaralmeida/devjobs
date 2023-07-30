@@ -4,7 +4,7 @@ export const StyleListJobs = styled.ul`
   flex-wrap: wrap;
   gap: 60px;
   padding: 0;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 50px;
   background-color: transparent;
 `
