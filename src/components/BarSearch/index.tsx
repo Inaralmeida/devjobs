@@ -35,7 +35,10 @@ const BarSearch = ({ handleChange, searchJobs }: BarSearchProps) => {
   }
   return (
     <StylesBarSearch className="content">
-      <section title="filter by title, companies or espertise">
+      <section
+        className="section__name"
+        title="filter by title, companies or espertise"
+      >
         <Input
           type="title"
           placeholder="filter by title, companies or espertise"
@@ -44,7 +47,7 @@ const BarSearch = ({ handleChange, searchJobs }: BarSearchProps) => {
           onChange={(e) => setSearchByTitle(e.target.value)}
         />
       </section>
-      <section title="filter by location">
+      <section title="filter by location" className="section__location">
         <Input
           type="location"
           placeholder="filter by location"
@@ -56,7 +59,7 @@ const BarSearch = ({ handleChange, searchJobs }: BarSearchProps) => {
 
       <section title="type contract" className="section__checkbox">
         <CheckBox options={optionsContratc} setValue={handleSetTypeContract} />
-        <Button title="button search" onClick={searchJobs}>
+        <Button title="button search" label="Search" onClick={searchJobs}>
           Search
         </Button>
       </section>

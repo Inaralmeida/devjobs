@@ -12,6 +12,12 @@ export const StylesBarSearch = styled.div`
 
   > section {
     flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  .section__name,
+  .section__location {
+    flex-shrink: 3;
   }
 
   > section:nth-child(2) {
