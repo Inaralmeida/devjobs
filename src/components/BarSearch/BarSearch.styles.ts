@@ -9,6 +9,8 @@ export const StylesBarSearch = styled.div`
   padding: 2px;
   border-radius: 8px;
   top: -45px;
+  padding: 10px 15px 0 15px;
+  gap: 20px;
 
   > section {
     flex-grow: 1;
@@ -36,5 +38,21 @@ export const StylesBarSearch = styled.div`
     padding: 18px 15px;
     height: 90px;
     background-color: ${(p) => p.theme.gray100};
+  }
+
+  @media screen and (max-width: 705px) {
+    flex-direction: column;
+    width: 90%;
+
+    > section {
+      width: 100%;
+    }
+
+    > section:nth-child(2) {
+      border: 1px solid ${(p) => p.theme.gray600};
+      border-left: none;
+      border-right: none;
+      padding: 12px 0;
+    }
   }
 `
